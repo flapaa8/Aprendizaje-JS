@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+      var uno = prompt("Cuanto dinero necesitas?")
+
+
+console.log(uno)
+if (uno>100000){
+  console.log("esta pidiendo demasiado el muchacho");
+  alert("Intenta pedir un poquito menos")
+}
+else if (uno<100000){
+  console.log("Demosle");
+  var interes = (uno/5)
+  console.log(interes)
+  alert('El interes sera: ' +interes);
+  var deudatotal = (Number(interes) + Number(uno))
+  console.log(deudatotal);
+  console.log(deudatotal/6);
+  var cuotamensual= (deudatotal/6)
+  alert('El total de la deuda sera: ' +deudatotal)
+  alert('Lo requerido a abonar por mes es de: ' +cuotamensual)
+  if (window.confirm("Esta seguro de que quiere pedir un prestamo?")) { 
+  alert("Gracias, por su dinero master");
+}
+  
+
+
+
+
+}
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+
+
+
+
+</head>
+
+
+</html>
